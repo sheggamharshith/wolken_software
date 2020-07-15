@@ -32,8 +32,7 @@ responses:
   utter_greet:
   - text: Hey! How are you?
   utter_cheer_up:
-  - image: https://i.imgur.com/nGF1K8f.jpg
-    text: 'Here is something to cheer you up:'
+  - text: 'Here is something to cheer you up:'
   utter_did_that_help:
   - text: Did that help you?
   utter_happy:
@@ -77,6 +76,7 @@ actions:
 - utter_requestId
 - utter_ask_Email
 - utter_ask_FirstName
+- utter_ask_requestId
 forms:
 - Email_form
 - requestId_form
