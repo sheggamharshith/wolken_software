@@ -1,0 +1,82 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- inform
+- get_all_ticket
+- create_ticket
+- update_request_status
+- get_case_request_status
+- close_request_status
+- testing_process
+entities:
+- Email
+- email
+- FirstName
+- requestId
+slots:
+  Email:
+    type: unfeaturized
+  FirstName:
+    type: unfeaturized
+  requestId:
+    type: unfeaturized
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_greet_sentence:
+  - buttons:
+    - payload: /get_all_ticket
+      title: Ticket Status
+    - payload: /create_ticket
+      title: Create Ticket
+    - payload: /update_request_status
+      title: Update Request
+    - payload: /get_case_request_status
+      title: Get Case Details
+    - payload: /close_request_status
+      title: close request
+    text: hey there ! Please select the option below
+  utter_ask_requestId:
+  - text: may i know your request id ?
+  utter_ask_Email:
+  - text: may i know your business email?
+  utter_ask_FirstName:
+  - text: may i know you name please?
+actions:
+- action_Get_all_status_Token
+- action_Create_request_Token
+- action_update_request_Token
+- action_getcase_request_Token
+- action_close_request_Token
+- utter_greet
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_iamabot
+- utter_greet_sentence
+- utter_requestId
+- utter_ask_Email
+- utter_ask_FirstName
+forms:
+- Email_form
+- requestId_form
