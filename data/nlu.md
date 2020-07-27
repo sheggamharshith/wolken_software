@@ -55,7 +55,6 @@
 - am I talking to a bot?
 - am I talking to a human?
 
-
 ## intent:inform
 - my email id is [harshit675@gmail.com](Email)
 - my gmail id is [hars@facebook.in](Email)
@@ -71,8 +70,6 @@
 - [11232](requestId)
 - [1123](requestId)
 - [121312](requestId)
-
-
 
 ## intent:get_all_ticket
 - get all ticket
@@ -114,10 +111,12 @@
 - close
 - close ticket
 
-
 ## intent:testing_process
--  start the testing process
-- testing process 
-- process testing 
-- testing 
-- do the testing process 
+- start the testing process
+- testing process
+- process testing
+- testing
+- do the testing process
+
+## intent:collect_wolken_email
+- i want to register for wolken 
